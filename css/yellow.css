@@ -1,0 +1,236 @@
+.information .container-fluid .row .box2>div>span:first-child{
+    color: #ffff00;
+}
+.fix{
+    border: 2px solid #ffff00;
+    color: #ffff00;
+}
+.fix:hover{
+    background-color: #ffff00;
+}
+.navbar ul li a{
+    color: #ffff00 !important;
+}
+.navbar ul li.select{
+    background-color: #ffff00;
+}
+.navbar ul li:hover >a{
+    background-color: #ffff00;
+}
+.navbar ul li div>a:hover{
+    background-color: #ffff00;
+}
+.navbar-toggler{
+    background-color: #ffff00 !important;
+}
+.carousel-caption>.link a:first-child{
+    background-color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+}
+.carousel-caption>.link a:last-child:hover{
+    border: 2px solid #ffff00 !important;
+    background-color: #ffff00;
+}
+.carousel-caption>.link a:first-child:hover{
+    border: 2px solid #ffff00;
+    color:#ffff00 !important ;
+}
+.about .container p{
+    color: #ffff00;
+}
+.about .container-fluid .row>div .second .one{
+    background-color: #ffff00;
+}
+.about .container-fluid .row>div .second .two a{
+    background-color: #ffff00;
+}
+.service .info .first .one div>p{
+    color: #ffff00;
+}
+.service .info .first .two div:first-child{
+    color: #ffff00;
+}
+.service .info .second>div>div div{
+    color: #ffff00;
+}
+.service .second .container .row>div .box .circle-box-inner{
+    border: 2px solid #ffff00;
+}
+.service .second .container .row>div .box .circle-box-inner div{
+    background-color: #ffff00;
+}
+.service .second .container .row>div .box h4{
+    color: #ffff00;
+}
+.projects .one .container p{
+    color: #ffff00;
+}
+.projects .two .container div button.active{
+    border-bottom: 2px solid #ffff00;
+    color: #ffff00;
+}
+.projects .three .container .row>div>div .first>div{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.projects .three .container .row>div>div .second p{
+    color: #ffff00;
+}
+.projects>.four .head .container p{
+    color: #ffff00;
+}
+.projects .four .numbers .container .row>div div{
+    color: #ffff00;
+}
+.projects .four .shadow{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.blog .first .container p{
+    color: #ffff00;
+}
+.blog .second .container .row .item>div:hover h3{
+    color: #ffff00;
+}
+.blog .second .container .row .item>div .two div:first-child a:hover{
+    color: #ffff00;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #ffff00 !important;
+}
+.owl-theme .owl-dots .owl-dot span:hover{
+    background-color: #ffff00;
+}
+.gallery .first .container p{
+    color: #ffff00;
+}
+.gallery .second .container .row>div div .updown>div{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.contact-us .first .container .row>.one div:nth-of-type(2) i,
+.contact-us .first .container .row>.one div:nth-of-type(3) i,
+.contact-us .first .container .row>.one div:nth-of-type(4) i{
+    color: #ffff00;
+}
+.contact-us .first .container .row>.two div:hover{
+    color: #ffff00;
+}
+.contact-us .first .container .row>.four form input:last-child{
+    border: 2px solid #ffff00;
+    background-color: #ffff00;
+}
+.contact-us .first .container .row>.four form input:last-child:hover{
+    color: #ffff00;
+}
+.contact-us .second .container a{
+    color: #ffff00;
+}
+.welcome::before{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.welcome .container div:last-child a:hover{
+    color: #ffff00;
+}
+.who-we-are .first .container p{
+    color: #ffff00;
+}
+.who-we-are .second .container .row>div .box div a{
+    color: #ffff00;
+}
+.who-we-are .third .container .row .one>div div{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.who-we-are .third .container .row .one>div div a{
+    color: #ffff00;
+}
+.who-we-are .third .container .row .two .first .container p{
+    color: #ffff00;
+}
+.process .first .container p{
+    color: #ffff00;
+}
+.process .second .container .row>div .box h4:hover{
+    color: #ffff00;
+}
+.process .second .container .row>div .box:hover .circle-box-inner{
+    border: 2px solid #ffff00;
+}
+.process .second .container .row>div .box:hover .circle-box-inner div{
+    background-color: #ffff00;
+}
+.team .first .container p{
+    color: #ffff00;
+}
+.team .second .container .row>div .box .one .links ul li a:hover{
+    background-color: #ffff00;
+}
+.team .second .container .row>div .box .two p{
+    color: #ffff00;
+}
+.request{
+    background-color: #ffff00;
+}
+.request .container .box .two a:hover{
+    color: #ffff00;
+}
+.faQ .container .row .two .box form input[type="submit"]{
+    background-color: #ffff00;
+}
+.all-services .first .container p{
+    color: #ffff00;
+}
+.all-services .second .container .row>div .box .hidden{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.all-services .second .container .row>div .box .hidden::before{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.all-services .second .container .row>div .box .hidden .link a{
+    background-color: #ffff00;
+}
+.all-services .second .container .row>div .box .two{
+    border-top: 2px solid #ffff00;
+}
+.all-services .second .container .row>div .box .two div{
+    background-color: #ffff00;
+}
+.blog-grid .row>div .box:hover .inner-box{
+    border: 1px solid #ffff00;
+}
+.blog-grid .row>div .box:hover .inner-box h3{
+    color: #ffff00;
+}
+.blog-grid .row>div .box .inner-box .three div a:hover{
+    color: #ffff00;
+}
+.gallery-single .first .container p{
+    color: #ffff00;
+}
+.gallery-single .second .container .row>div div .updown>div{
+    background-color: rgba(255, 255, 0,0.7);
+}
+.gallery-single .second .container .row>div div .expand{
+    color: #ffff00;
+}
+.project-finance .row .one .box div span:first-child{
+    color: #ffff00;
+}
+.project-finance .row .two .box p:nth-of-type(1){
+    color: #ffff00;
+}
+.project-finance .row .two .box a:hover{
+    background-color: #ffff00;
+}
+.project-analysis .row .two .box p:nth-of-type(3){
+    background-color: #ffff00;
+}
+.project-result .row .two .box p:nth-of-type(2){
+    background-color: #ffff00;
+}
+.contact-box .row .one .box p:nth-of-type(1){
+    color: #ffff00;
+}
+.contact-box .row .one .box form .submit input{
+    background-color: #ffff00;
+}
+.contact-box .row .two .box>div>div div:nth-of-type(1){
+    color: #ffff00;
+}

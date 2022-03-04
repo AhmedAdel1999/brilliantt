@@ -1,0 +1,2250 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*the start of information box*/
+.information{
+    width: 100%;
+    background-color: rgb(245, 245, 239);
+    padding: 0px 60px;
+    color: rgb(156, 156, 154);
+}
+.information .container-fluid .row{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.information .container-fluid .row .box1{
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+.information .container-fluid .row .box2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.information .container-fluid .row .box2>div{
+    padding: 7px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
+}
+.information .container-fluid .row .box2>div>span:first-child{
+    margin-right: 10px;
+    color: #48c7ec;
+    font-size: 20px;
+}
+/*the end of information box*/
+
+
+/*the start of fixed box*/
+.fix{
+    width: 45px;
+    height: 45px;
+    min-width: 35px;
+    min-height: 35px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    border: 2px solid #48c7ec;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    color: #48c7ec;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+.fix:hover{
+    background-color: #48c7ec;
+    color: #fff;
+}
+/*the end of fixed box*/
+
+/*the start of switch color box*/
+.swith-color-box{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 200px;
+    position: fixed;
+    top: 40%;
+    z-index: 100;
+    transition: all 0.4s ease-in-out;
+}
+.swith-color-box.moveon{
+   transform: translateX(-40px);
+    transition: all 0.4s ease-in-out;
+}
+.swith-color-box .color-change{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 100%;
+    background-color: #000;
+}
+.swith-color-box .swith-icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    background-color: #000;
+}
+.swith-color-box .color-change>div{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.swith-color-box .color-change #wood{
+  color: #a0522d;
+}
+.swith-color-box .color-change #yellow{
+    color: #ffff00;
+}
+.swith-color-box .color-change #blue{
+    color: #48c7ec;
+}
+.swith-color-box .color-change #green{
+   color: #0b8000;
+}
+.swith-color-box .color-change #orange{
+    color: #ff7300;
+}
+/*the start of switch color box*/
+
+/*the start of navbar box*/
+.navbar{
+    background-color: #fff !important;
+}
+.navbar ul li{
+    border-radius: 10px;
+}
+.navbar ul li a{
+    color: #48c7ec !important;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+@media(max-width:992px){
+    .navbar ul li>a{
+        padding-left: 30px !important;
+    } 
+}
+
+.navbar ul li.select{
+    background-color: #48c7ec;
+}
+.navbar ul li.select >a{
+    color: #fff !important;
+}
+.navbar ul li:hover >a{
+    background-color: #48c7ec;
+    color: #fff !important;
+}
+.navbar ul li div{
+    border: none;
+    outline: none;
+}
+.navbar ul li div>a:hover{
+    background-color: #48c7ec;
+    color: #fff !important;
+}
+.navbar-toggler{
+    border-radius: 10px !important;
+    background-color: #48c7ec !important;
+    border: none !important;
+    outline: none !important;
+}
+.navbar.change{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    transform: translateY(0);
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    animation: trans 0.5s ease-in-out 0s forwards;
+}
+@keyframes trans{
+    0%{
+        transform: translateY(-170px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*the end of navbar box*/
+
+
+
+/*the start of slider box*/
+.banner{
+    width: 100%;
+    height: 620px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel{
+    margin-bottom: 100px;
+}
+.carousel-caption{
+    bottom: auto !important;
+    top: 40%;
+}
+.carousel-caption h3.font{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.carousel-caption>div:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.carousel-caption>div:nth-of-type(1) p.fonty{
+    font-size: 18px;
+    width: 75%;
+    text-align: center;
+}
+.carousel-caption>div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carousel-caption>.link a:first-child{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0px 40px;
+    min-width: 120px;
+    min-height: 50px;
+    margin-right: 30px;
+    background-color: #48c7ec !important;
+    color: #fff;
+    border: 2px solid #48c7ec !important;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 30px;
+}
+.carousel-caption>.link a:last-child{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0px 40px;
+    min-width: 120px;
+    min-height: 50px;
+    margin-right: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+    background-color: inherit;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+.carousel-caption>.link a:last-child:hover{
+    border: 2px solid #48c7ec !important;
+    background-color: #48c7ec;
+}
+.carousel-caption>.link a:first-child:hover{
+    background-color: inherit !important;
+    border: 2px solid #48c7ec;
+    color:#48c7ec !important ;
+}
+@media(max-width:776px){
+    .carousel-caption{
+        display: block !important;
+    }
+}
+/*the end of slider box*/
+
+
+
+/*the start of about box*/
+.about{
+    margin-bottom: 70px;
+}
+.about .container{
+    margin-bottom: 40px;
+}
+.about .container h6{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+.about .container h1:nth-of-type(2){
+    font-size: 30px;
+}
+.about .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    color: #48c7ec;
+ }
+.about .container-fluid .row{
+    margin: 0px;
+    padding: 0px;
+}
+.about .container-fluid .row>div{
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.about .container-fluid .row>div .first{
+    width: 100%;
+    border: 1px solid rgb(241, 239, 239);
+}
+.about .container-fluid .row>div .first h2{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px 0px;
+    margin: 0px;
+}
+.about .container-fluid .row>div .second{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.about .container-fluid .row>div .second img{
+    width: 100%;
+    height: 100%;
+}
+.about .container-fluid .row>div .second .one{
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+    z-index: 2;
+    color: #fff;
+    background-color: #48c7ec;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+.about .container-fluid .row>div .second .two{
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+.about .container-fluid .row>div .second .two a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: #48c7ec;
+    color: #fff;
+}
+.about .container-fluid .row>div p{
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 30px;
+    text-align: center;
+    border: 1px solid rgb(241, 239, 239);
+    color: rgb(134, 133, 133);
+}
+/*the end of about box*/
+
+
+/*the start of PROCESS box*/
+.service{
+    margin-bottom: 100px;
+    background-color: rgb(250, 246, 246);
+}
+.service .first{
+    margin-bottom: 20px;
+}
+.service .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.service .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.service .second .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.service .second .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.service .second .container .row>div .box{
+    padding: 0px 20px;
+}
+.service .second .container .row>div .box .circle-box-outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.service .second .container .row>div .box .circle-box-inner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #48c7ec;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.service .second .container .row>div .box .circle-box-inner div{
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 50%;
+    background-color: #48c7ec;
+    color: #fff;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.4s ease-in-out;
+}
+.service .second .container .row>div .box h4{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 23px;
+    transition: all 0.4s ease-in-out;
+    color: #48c7ec;
+}
+.service .second .container .row>div .box p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(122, 122, 119);
+    margin: 0px;
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width: 1200px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+/*the end of service box*/
+
+
+
+/*the start of projects box*/
+.projects{
+    background-color: rgb(243, 243, 239);
+    margin-bottom: 85px;
+}
+.projects .one{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.projects .one .container p{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #48c7ec;
+}
+.projects .one .container h1{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #000;
+}
+.projects .two{
+    margin-bottom: 40px;
+}
+.projects .two .container div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.projects .two .container div div{
+    width: initial;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    background-color: rgb(241, 239, 239);
+    border-radius: 30px;
+}
+.projects .two .container div button{
+    display: block;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    color: rgb(109, 109, 108);
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(241, 239, 239);
+}
+.projects .two .container div button.active{
+    border-bottom: 2px solid #48c7ec;
+    color: #48c7ec;
+}
+.projects .three{
+    margin-bottom: 50px;
+}
+.projects .three .container .row{
+    margin: 0px;
+    padding: 0px;
+}
+.projects .three .container .row>div{
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.projects .three .container .row>div>div{
+    position: relative;
+}
+.projects .three .container .row>div>div img{
+   width: 100%;
+   height: 100%;
+}
+.projects .three .container .row>div>div .first{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+}
+.projects .three .container .row>div>div .first>div{
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: rgba(72, 199, 236,0.7);
+    transition: all 0.4s ease-in-out;
+    transform: translateY(100%);
+}
+@keyframes transmove{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes transmove2{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+.projects .three .container .row>div>div .second{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 4%;
+    z-index: -1;
+    padding-left: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.projects .three .container .row>div>div .second h3{
+    margin: 0px;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.projects .three .container .row>div>div .second p{
+    margin: 0px;
+    font-size: 16px;
+    color: #48c7ec;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.projects .three .container .row>div>div:hover .second{
+    animation: fade .02s ease-in-out 0.36s forwards;
+}
+@keyframes fade{
+    0%{
+        z-index: -1;
+    }
+    100%{
+        z-index: 1;
+    }
+}
+.projects>.four{
+    width: 100%;
+    background-image: url('photos/bg-02.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 25px 0px;
+}
+.projects>.four .head{
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+.projects>.four .head .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.projects>.four .head .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.projects .four .numbers .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.projects .four .numbers .container .row>div div{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   font-size: 50px;
+   color: #48c7ec;
+   margin-bottom: 20px;
+   position: relative;
+   z-index: 2;
+}
+.projects .four .numbers .container .row>div h3{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    margin: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+ }
+ .projects .four .numbers .container .row>div p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: rgb(109, 109, 108);
+    margin: 0px;
+    position: relative;
+    z-index: 2;
+}
+.projects .four .shadow{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 199, 236,0.7)
+
+}
+/*the end of projects box*/
+
+
+
+/*the start of blog box*/
+.blog{
+    margin-bottom: 100px;
+    background-color: rgb(250, 246, 246);
+}
+.blog .first{
+    margin-bottom: 40px;
+}
+.blog .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.blog .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.blog .second .container .row{
+    margin: 0px;
+    padding: 0px;
+}
+.blog .second .container .row .item .text{
+    padding:0px 30px;
+    border: 2px solid rgb(241, 239, 239);
+    transition: all 0.4s ease-in-out;
+}
+.blog .second .container .row .item .img{
+  position: relative;
+}
+.blog .second .container .row .item .img img{
+    width: 100%;
+    height: 100%;
+}
+.blog .second .container .row .item>div .one{
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 18px;
+    color: rgb(156, 156, 154);
+    margin: 0px;
+}
+.blog .second .container .row .item>div h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #000;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 20px;
+}
+.blog .second .container .row .item>div:hover h3{
+    color: #48c7ec;
+}
+.blog .second .container .row .item>div p{
+    color: rgb(156, 156, 154);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.blog .second .container .row .item>div .two{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+    border-top: 1px solid rgb(241, 239, 239);
+    margin: 0px;
+}
+.blog .second .container .row .item>div .two div:first-child a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    transition: all 0.6s ease-in-out;
+}
+.blog .second .container .row .item>div .two div:first-child a :hover{
+  color: #48c7ec;
+}
+.blog .second .container .row .item>div .two div:last-child{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgb(156, 156, 154);
+}
+.owl-theme .owl-dots .owl-dot span{
+    border-radius: 0px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #48c7ec !important;
+}
+.owl-theme .owl-dots .owl-dot span:hover{
+    background-color: #48c7ec;
+}
+/*the end of blog box*/
+
+
+/*the start of gallery box*/
+.gallery{
+    margin-bottom: 100px;
+}
+.gallery .first{
+    margin-bottom: 40px;
+}
+.gallery .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gallery .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gallery .second .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.gallery .second .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+.gallery .second .container .row>div>div{
+    position: relative;
+}
+.gallery .second .container .row>div div img{
+    width: 100%;
+    height: 100%;
+}
+.gallery .second .container .row>div div .updown{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    overflow: hidden;  
+}
+.gallery .second .container .row>div div .updown>div{
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: rgba(72, 199, 236,0.7);
+    transition: all 0.4s ease-in-out;
+}
+.gallery .second .container .row>div div .updown .four,
+.gallery .second .container .row>div div .updown .two{
+    transition: all 0.4s ease-in-out;
+    transform: translateY(100%);
+}
+.gallery .second .container .row>div div .updown .one,
+.gallery .second .container .row>div div .updown .three{
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-100%);
+}
+.gallery .second .container .row>div div .updown:hover .one{
+    transform: translateY(0%);
+}
+.gallery .second .container .row>div div .updown:hover .two{
+    transform: translateY(0%);
+}
+.gallery .second .container .row>div div .updown:hover .three{
+    transform: translateY(0%);
+}
+.gallery .second .container .row>div div .updown:hover .four{
+    transform: translateY(0%);
+}
+/*the end of gallery box*/
+
+
+
+
+/*the start of contact box*/
+.contact-us{
+    background-color: #000;
+    padding-top: 30px;
+}
+
+.contact-us .first .container{
+    border-bottom: 1px solid rgb(109, 109, 108);
+    padding-bottom: 25px;
+}
+.contact-us .first .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.contact-us .first .container .row>.one h3{
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+.contact-us .first .container .row>.one h3 img{
+    width: 75%;
+    height: 100%;
+}
+.contact-us .first .container .row>.one div{
+    width: 85%;
+    margin: 0px;
+    font-size: 17px;
+    color: rgb(109, 109, 108);
+    margin-bottom: 20px;
+}
+.contact-us .first .container .row>.one div:nth-of-type(2) i,
+.contact-us .first .container .row>.one div:nth-of-type(3) i,
+.contact-us .first .container .row>.one div:nth-of-type(4) i{
+    color: #48c7ec;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.contact-us .first .container .row>.two h3{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 55px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.contact-us .first .container .row>.two div{
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.contact-us .first .container .row>.two div:hover{
+    color: #48c7ec;
+}
+.contact-us .first .container .row>.three h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.contact-us .first .container .row>.three div{
+    border-bottom: 0.5px solid rgb(109, 109, 108);
+    padding: 20px 0px;
+}
+.contact-us .first .container .row>.three div:nth-of-type(3){
+    border: none;
+}
+.contact-us .first .container .row>.three div h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.contact-us .first .container .row>.three div p{
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: rgb(122, 122, 119);
+}
+.contact-us .first .container .row>.four h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 55px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.contact-us .first .container .row>.four p{
+    font-size: 16px;
+    color: rgb(122, 122, 119);
+    margin-bottom: 20px;
+}
+.contact-us .first .container .row>.four form{
+    display: block;
+    margin-bottom: 20px;
+}
+.contact-us .first .container .row>.four form input:first-child{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: rgb(122, 122, 119);
+    background-color: inherit;
+    border: 1px solid rgb(109, 109, 108);
+    margin-bottom: 20px;
+}
+.contact-us .first .container .row>.four form input:last-child{
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+    width: 80%;
+    outline: none;
+    border: 2px solid #48c7ec;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #48c7ec;
+    transition: all 0.4s ease-in-out;
+}
+.contact-us .first .container .row>.four form input:last-child:hover{
+    background-color: inherit;
+    color: #48c7ec;
+}
+.contact-us .first .container .row>.four div{
+    font-size: 16px;
+    color: rgb(122, 122, 119);
+}
+.contact-us .second{
+    padding: 30px 0px;
+}
+.contact-us .second .container{
+    display: flex;
+    justify-content: center;
+    color: rgb(109, 109, 108);
+    font-size: 17px;
+}
+.contact-us .second .container a{
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding-left: 6px;
+  color: #48c7ec;
+}
+/*the end of contact box*/
+
+
+
+/*this is the start of code about the about-company page and it,s sections*/
+/*the start of welcome box*/
+.welcome{
+    width: 100%;
+    background-image: url('photos/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.welcome::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    content: '';
+    background-color: rgba(72, 199, 236,0.7);
+}
+.welcome .container div:first-child{
+    height: 220px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.welcome .container div:first-child h1{
+    text-align: center;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    margin: 0px;
+}
+.welcome .container div:last-child {
+  padding: 16px 0px;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.welcome .container div:last-child a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 5px;
+    transition: all 0.4s ease-in-out;
+}
+.welcome .container div:last-child a:hover{
+    color: #48c7ec;
+}
+/*the start of welcome box*/
+
+
+/*the start of who-we-are box*/
+.who-we-are{
+    padding-top: 80px;
+}
+.who-we-are .first{
+    margin-bottom: 40px;
+}
+.who-we-are .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.who-we-are .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.who-we-are .second .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.who-we-are .second .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.who-we-are .second .container .row>div .box{
+  border: 2px solid #d3cdcd;
+  padding: 20px;
+}
+.who-we-are .second .container .row>div .box h4{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+.who-we-are .second .container .row>div .box p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(202, 202, 199);
+}
+.who-we-are .second .container .row>div .box div a{
+    display: block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #48c7ec;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px solid #d3cdcd;
+}
+.who-we-are .third{
+    background-color: #000;
+    padding: 70px 0px;
+}
+.who-we-are .third .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.who-we-are .third .container .row .one>div{
+    position: relative;
+}
+.who-we-are .third .container .row .one>div img{
+    width: 100%;
+    height: 100%;
+}
+.who-we-are .third .container .row .one>div div{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0,0.7);
+}
+.who-we-are .third .container .row .one>div div span{
+    font-size: 17px;
+    color: #fff;
+}
+.who-we-are .third .container .row .one>div div a{
+    text-decoration: none;
+    color: #48c7ec;
+    font-size: 15px;
+}
+.who-we-are .third .container .row .two .first{
+    margin-bottom: 60px;
+}
+.who-we-are .third .container .row .two .first .container p{
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.who-we-are .third .container .row .two .first .container h2{
+    width: 100%;
+    text-transform: capitalize;
+    margin: 0px;
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.who-we-are .third .container .row .two .second .container-fluid{
+    padding: 0px;
+}
+.who-we-are .third .container .row .two .second .container-fluid .row{
+    padding: 0px;
+    margin: 0px;
+}
+.who-we-are .third .container .row .two .second .container-fluid .row div{
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.who-we-are .third .container .row .two .second .container-fluid .row div p{
+    font-size: 17px;
+    margin: 0px;
+    color: rgb(109, 109, 108);
+}
+/*the end of who-we-are box*/
+
+
+
+
+/*the start of PROCESS box*/
+.process{
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.process .first{
+    margin-bottom: 40px;
+}
+.process .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.process .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.process .second .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.process .second .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.process .second .container .row>div .box{
+    padding: 0px 20px;
+}
+.process .second .container .row>div .box .circle-box-outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.process .second .container .row>div .box .circle-box-inner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid rgb(241, 239, 239);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.process .second .container .row>div .box .circle-box-inner div{
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 50%;
+    background-color: rgb(233, 233, 231);
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.4s ease-in-out;
+}
+.process .second .container .row>div .box h4{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 23px;
+    transition: all 0.4s ease-in-out;
+}
+.process .second .container .row>div .box p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(122, 122, 119);
+    margin: 0px;
+}
+.process .second .container .row>div .box h4:hover{
+    color: #48c7ec;
+}
+.process .second .container .row>div .box:hover .circle-box-inner{
+    border: 2px solid #48c7ec;
+}
+.process .second .container .row>div .box:hover .circle-box-inner div{
+    color: #fff;
+    background-color: #48c7ec;
+}
+/*the end of PROCESS box*/
+
+
+/*the start of achivements box*/
+.achivements{
+    padding-top: 80px;
+    background-color: rgb(241, 239, 239);
+}
+.achivements .container h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    text-transform: capitalize;
+}
+.achivements .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.achivements .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.achivements .container .row .one div p{
+    margin: 0px;
+    font-size: 16px;
+    color: rgb(109, 109, 108);
+}
+.achivements .container .row .two{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.achivements .container .row .two div{
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+.achivements .container .row .two div img{
+    width: 100%;
+    height: 100%;
+}
+/*the start of achivements box*/
+
+
+
+/*the start of team box*/
+.team{
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.team .first{
+    margin-bottom: 40px;
+}
+.team .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.team .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.team .second .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.team .second .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.team .second .container .row>div .box .one img{
+    width: 100%;
+    height: 100%;
+}
+.team .second .container .row>div .box .one{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.team .second .container .row>div .box .one .links{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out;
+}
+.team .second .container .row>div .box:hover .links{
+    transform: translateY(0%);
+}
+.team .second .container .row>div .box .one .links ul{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+.team .second .container .row>div .box .one .links ul li{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.team .second .container .row>div .box .one .links ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.team .second .container .row>div .box .one .links ul li a:hover{
+    background-color: #48c7ec;
+    color: #fff;
+}
+.team .second .container .row>div .box .two{
+    margin-bottom: 20px;
+}
+.team .second .container .row>div .box .two h6{
+    text-align: center;
+    font-size: 22px;
+    margin: 0px;
+    text-transform: capitalize;
+}
+.team .second .container .row>div .box .two p{
+    text-align: center;
+    font-size: 16px;
+    margin: 0px;
+    color: #48c7ec;
+    text-transform: capitalize;
+}
+.team .second .container .row>div .box .three p{
+    text-align: center;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+.team .second .container .row>div .box .three p b{
+    color: rgb(109, 109, 108);
+}
+.team .second .container .row>div .box .three p span{
+    color: rgb(185, 185, 183);
+}
+/*the end of team box*/
+
+
+/*the start of request box*/
+.request{
+    background-color: #48c7ec;
+}
+.request .container .box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.request .container .box .one{
+    height: 120px;
+    padding: 40px 0px;
+    color: #fff;
+    font-size: 20px;
+}
+.request .container .box .two{
+    padding: 40px 0px;
+    height: 120px;
+}
+.request .container .box .two a{
+    width: 160px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+.request .container .box .two a:hover{
+    background-color: #fff;
+    color: #48c7ec;
+}
+/*the end of request box*/
+/*this is the end of code about the about-company page and it,s sections*/
+
+
+
+/*this is the start of code about the faQ,s page and it,s sections*/
+.faQ{
+    padding-top: 100px;
+    margin-bottom: 80px;
+}
+.faQ .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.faQ .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.faQ .container .row .one .box{
+    padding: 0px 20px;
+    border: 1px solid rgb(224, 224, 221);
+}
+.faQ .container .row .one .box div{
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(223, 223, 219);
+}
+.faQ .container .row .one .box div h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.faQ .container .row .one .box div h3 span{
+    float: right;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+.faQ .container .row .one .box div h3 span.rotate{
+    transform: rotateZ(90deg);
+}
+.faQ .container .row .one .box div p{
+    font-size: 16px;
+    color: rgb(109, 109, 108);
+    margin: 0px;
+    margin-top: 15px;
+    display: none;
+}
+.faQ .container .row .two .box{
+    padding: 15px 25px;
+    background-color: rgb(245, 245, 240);
+}
+.faQ .container .row .two .box h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.faQ .container .row .two .box form{
+    display: block;
+}
+.faQ .container .row .two .box form input{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: rgb(122, 122, 119);
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(241, 239, 239);
+    margin-bottom: 20px;
+}
+.faQ .container .row .two .box form textarea{
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(241, 239, 239);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.faQ .container .row .two .box form input[type="submit"]{
+    margin-bottom: 0px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    line-height: 0px;
+    text-transform: capitalize;
+    background-color: #48c7ec;
+    color: #fff;
+    font-size: 20px;
+}
+/*this is the end of code about the faQ,s page and it,s sections*/
+
+
+/*this is the start of code about the all-services page and it,s sections*/
+/*the start of all-services box*/
+.all-services{
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.all-services .first{
+    margin-bottom: 40px;
+}
+.all-services .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.all-services .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.all-services .second .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.all-services .second .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.all-services .second .container .row>div .box{
+    overflow: hidden;
+    position: relative;
+}
+.all-services .second .container .row>div .box .one img{
+    width: 100%;
+    height: 100%;
+    transition: none;
+}
+.all-services .second .container .row>div .box .hidden{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: rgba(72, 199, 236,0.7);
+    padding: 20% 30px;
+    transform-origin: center;
+    transform: rotateY(90deg);
+    transition: all 0.4s ease-in-out;
+}
+.all-services .second .container .row>div .box .hidden::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 199, 236,0.7);
+    content: '';
+}
+.all-services .second .container .row>div .box:hover .hidden{
+    transform: rotateY(0deg);
+}
+.all-services .second .container .row>div .box .hidden .icon{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.all-services .second .container .row>div .box .hidden h4{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+}
+.all-services .second .container .row>div .box .hidden p{
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.all-services .second .container .row>div .box .hidden .link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.all-services .second .container .row>div .box .hidden .link a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #48c7ec;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.all-services .second .container .row>div .box .two{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: 2px solid #48c7ec;
+    position: relative;
+}
+.all-services .second .container .row>div .box .two div{
+    height: 60px;
+    width: 60px;
+    background-color: #48c7ec;
+    color: #fff;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+}
+.all-services .second .container .row>div .box .two p{
+    height: 60px;
+    display: flex;
+    padding-left: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0px;
+}
+/*the end of all-services box*/
+/*this is the end of code about the all-services page and it,s sections*/
+
+
+
+/*this is the start of code about the blog-grid page and it,s sections*/
+/*the start of blog-grid box*/
+.blog-grid{
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.blog-grid .first .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.blog-grid .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.blog-grid .row>div .box .one img{
+    width: 100%;
+    height: 100%;
+}
+.blog-grid .row>div .box .inner-box{
+    padding: 20px;
+    border: 1px solid rgb(233, 233, 231);
+    transition: all 0.4s ease-in-out;
+}
+.blog-grid .row>div .box:hover .inner-box{
+    border: 1px solid #48c7ec;
+}
+.blog-grid .row>div .box .inner-box .two{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(134, 133, 133);
+    margin-bottom: 20px;
+}
+.blog-grid .row>div .box .inner-box h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+    transition: all 0.4s ease-in-out;
+}
+.blog-grid .row>div .box:hover .inner-box h3{
+    color: #48c7ec;
+}
+.blog-grid .row>div .box .inner-box .three{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    border-top: 1px solid rgb(233, 233, 231);
+}
+.blog-grid .row>div .box .inner-box .three div{
+    padding: 15px 0px;
+    color: rgb(122, 122, 119);
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.blog-grid .row>div .box .inner-box .three div a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+.blog-grid .row>div .box .inner-box .three div a:hover{
+    color: #48c7ec;
+}
+/*the end of blog-grid box*/
+/*this is the end of code about the blog-grid page and it,s sections*/
+
+
+
+
+/*this is the start of code about the gallery-single page and it,s sections*/
+/*the start of gallery-single box*/
+.gallery-single{
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.gallery-single .first{
+    margin-bottom: 40px;
+}
+.gallery-single .first .container p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #48c7ec;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gallery-single .first .container h2{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gallery-single .second .container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.gallery-single .second .container .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+.gallery-single .second .container .row>div>div{
+    position: relative;
+    box-shadow: 4px 4px 4px 1px rgba(156, 156, 154,0.6),
+    -4px -4px 4px 1px rgba(156, 156, 154,0.6),
+    4px -4px 4px 1px rgba(156, 156, 154,0.6),
+    4px -4px 4px 1px rgba(156, 156, 154,0.6);
+}
+.gallery-single .second .container .row>div div img{
+    width: 100%;
+    height: 100%;
+}
+.gallery-single .second .container .row>div div .updown{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;  
+}
+.gallery-single .second .container .row>div div .updown>div{
+    width: 100%;
+    height: calc(100% / 4);
+    display: block;
+    background-color: rgba(72, 199, 236,0.7);
+    transition: all 0.4s ease-in-out;
+}
+.gallery-single .second .container .row>div div .updown .four,
+.gallery-single .second .container .row>div div .updown .two{
+    transition: all 0.4s ease-in-out;
+    transform: translateX(100%);
+}
+.gallery-single .second .container .row>div div .updown .one,
+.gallery-single .container .row>div div .updown .three{
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-100%);
+}
+.gallery-single .second .container .row>div div:hover .four{
+    transform: translateX(0%);
+}
+.gallery-single .second .container .row>div div:hover .three{
+    transform: translateX(0%);
+}
+.gallery-single .second .container .row>div div:hover .two{
+    transform: translateX(0%);
+}
+.gallery-single .second .container .row>div div:hover .one{
+    transform: translateX(0%);
+}
+.gallery-single .second .container .row>div div .expand{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #fff;
+    color: #48c7ec;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.gallery-single .second .container .row>div div:hover .expand{
+    opacity: 1;
+}
+/*the end of gallery-single box*/
+/*this is the end of code about the gallery-single page and it,s sections*/
+
+
+
+
+/*this is the start of code about the project-single page and it,s sections*/
+/*the start of project-img box*/
+.project-img{
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+.project-img .first .row{
+    padding: 0px;
+    margin: 0px;
+}
+.project-img .first .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.project-img .first .row>div div img{
+    width: 100%;
+    height: 100%;
+}
+/*the end of project-img box*/
+
+/*the start of project-finance box*/
+.project-finance{
+    margin-bottom: 30px;
+}
+.project-finance .row{
+    margin: 0px;
+    padding: 0px;
+}
+.project-finance .row .one{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.project-finance .row .one .box{
+    padding: 20px;
+    background-color: rgb(223, 223, 219);
+}
+.project-finance .row .one .box div{
+    width: 100%;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+}
+.project-finance .row .one .box div span:first-child{
+    color: #48c7ec;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project-finance .row .one .box div span:last-child{
+    padding-left: 5px;
+    font-size: 16px;
+    color: rgb(122, 122, 119);
+}
+.project-finance .row .two{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.project-finance .row .two .box h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.project-finance .row .two .box p:nth-of-type(1){
+    margin-bottom: 20px;
+    color: #48c7ec;
+    font-size: 14px;
+}
+.project-finance .row .two .box p:nth-of-type(2){
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgb(109, 109, 108);
+}
+.project-finance .row .two .box a{
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid rgb(231, 231, 231);
+    background-color: #fff;
+    color: #000;
+    transition: all 0.4s ease-in-out;
+}
+.project-finance .row .two .box a:hover{
+    background-color: #48c7ec;
+    color: #fff;
+}
+/*the end of project-finance box*/
+
+
+/*the end of project-analysis box*/
+.project-analysis{
+    margin-bottom: 40px;
+}
+.project-analysis .row{
+    padding: 0px;
+    margin: 0px;
+}
+.project-analysis .row .one h3{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.project-analysis .row .two .box p{
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgb(109, 109, 108);
+}
+.project-analysis .row .two .box p:nth-of-type(3){
+    padding: 15px;
+    background-color: #48c7ec;
+    color: #fff;
+    font-size: 18px;
+}
+.project-analysis .row .two .box div img{
+    width: 100%;
+    height: 100%;
+}
+/*the end of project-analysis box*/
+
+
+/*the end of project-result box*/
+.project-result{
+    margin-bottom: 80px;
+}
+.project-result .row{
+    padding: 0px;
+    margin: 0px;
+}
+.project-result .row .one h3{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.project-result .row .two .box p{
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgb(109, 109, 108);
+}
+.project-result .row .two .box p:nth-of-type(2){
+    padding: 15px;
+    background-color: #48c7ec;
+    color: #fff;
+    font-size: 18px;
+}
+.project-result .row .two .box div img{
+    width: 100%;
+    height: 100%;
+}
+/*the end of project-result box*/
+/*this is the end of code about the project-single page and it,s sections*/
+
+
+
+/*this is the end of code about the contact page and it,s sections*/
+/*the start of contact-box*/
+.contact-box{
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.contact-box .row{
+    padding: 0px;
+    margin: 0px;
+}
+.contact-box .row>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.contact-box .row .one .box p:nth-of-type(1){
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #48c7ec;
+    margin-bottom: 5px;
+}
+.contact-box .row .one .box p:nth-of-type(2){
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: rgb(122, 122, 119);
+}
+.contact-box .row .one .box h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.contact-box .row .one .box form{
+    display: block;
+    width: 100%;
+}
+.contact-box .row .one .box form>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.contact-box .row .one .box form>div>div{
+    width: 48%;
+}
+@media(max-width:992px){
+    .contact-box .row .one .box form>div>div{
+        width: 100%;
+    }
+}
+.contact-box .row .one .box form>div>div label{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.contact-box .row .one .box form>div>div input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(245, 245, 240);
+}
+.contact-box .row .one .box form .message{
+    width: 100%;
+}
+.contact-box .row .one .box form .message label{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.contact-box .row .one .box form .message textarea{
+    display: block;
+    width: 100%;
+    height: 140px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(245, 245, 240);
+}
+.contact-box .row .one .box form .submit{
+    width: 100%;
+}
+.contact-box .row .one .box form .submit input{
+    display: block;
+    width: 160px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    line-height: 0px;
+    text-align: center;
+    background-color: #48c7ec;
+    outline: none;
+    border: none;
+}
+.contact-box .row .two .box{
+    padding-top: 30px;
+}
+.contact-box .row .two .box iframe{
+    display: block;
+    margin-bottom: 20px;
+}
+.contact-box .row .two .box>div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.contact-box .row .two .box>div>div{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-box .row .two .box>div>div div:nth-of-type(1){
+    font-size: 25px;
+    color: #48c7ec;
+    margin-right: 10px;
+}
+.contact-box .row .two .box>div>div div:nth-of-type(2){
+    padding-top: 7px;
+}
+.contact-box .row .two .box>div>div div:nth-of-type(2) h3{
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.contact-box .row .two .box>div>div div:nth-of-type(2) span{
+    display: block;
+    font-size: 16px;
+    color: rgb(109, 109, 108);
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*the end of contact-box*/
+/*this is the end of code about the contact page and it,s sections*/
